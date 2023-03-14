@@ -1,0 +1,30 @@
+{
+    "seed": 42,
+    "dataset": "protein",
+    "batch_size": 50,
+    "d_input": 30,
+    "d_embed": 32,
+    "n_heads": 16,
+    "d_hidden": 128,
+    "d_kernel": 10,
+    "n_layers": 2,
+    "d_out": 100,
+    "dropout": 0.2,
+    "use_pretrained": false,
+    "path_pretrained": null,
+    "name_constraints": [
+        "diversity",
+        "fidelity",
+        "locality",
+        "simplicity"
+    ],
+    "w_constraints": [
+        1.0,
+        0.1,
+        0.1,
+        0.0
+    ],
+    "lr": 1e-3,
+    "wd": 0,
+    "warm_up_step": 5
+}
